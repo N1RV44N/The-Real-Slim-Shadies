@@ -1,0 +1,226 @@
+/*VERY IMPORTANT: DO NOT EDIT ANYTHING OR COPY ANYTHING OR 5,000rs FINE
+WE CAN SEE, THIS IS A CLOUD SANDBOX*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --txt-clr: #fff;
+  --body-bg: #333232;
+  --card-bg: #141414;
+  --passive-clr: #3d0101;
+  --accent-clr: #bf0000;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--txt-clr);
+  background-color: var(--body-bg);
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+::selection {
+  background: var(--passive-clr);
+  color: #fff;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.navbar {
+  position: fixed;
+  left: -220px;
+  width: 220px;
+  height: 100vh;
+  background: var(--card-bg);
+  transition: all 0.5s ease;
+  margin-left: 0;
+}
+.navbar h3 {
+  font-size: 24px;
+  color: #fff;
+  line-height: 70px;
+  user-select: none;
+  padding-left: 33px;
+}
+.navbar a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 60px;
+  color: #fff;
+  padding-left: 0px;
+  margin-left: 0;
+  box-sizing: border-box;
+  transition: 0.35s;
+}
+.i1:hover {
+  background: var(--passive-clr);
+  padding-left: 12px;
+  border-left: 5px solid var(--accent-clr);
+}
+.i2:hover {
+  background: var(--passive-clr);
+  padding-left: 12px;
+  border-left: 5px solid var(--accent-clr);
+}
+.i3:hover {
+  background: var(--passive-clr);
+  padding-left: 12px;
+  border-left: 5px solid var(--accent-clr);
+}
+.i4:hover {
+  background: var(--passive-clr);
+  padding-left: 12px;
+  border-left: 5px solid var(--accent-clr);
+}
+.i5:hover {
+  background: var(--passive-clr);
+  padding-left: 12px;
+  border-left: 5px solid var(--accent-clr);
+}
+
+#toggle {
+  display: none;
+}
+label #btn,
+label #cancel {
+  position: absolute;
+  cursor: pointer;
+  background: #242424;
+  border-radius: 6px;
+}
+label #btn:hover,
+label #cancel:hover {
+  background: var(--passive-clr);
+}
+label #btn {
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: #fff;
+  padding: 6px 12px;
+  transition: all 0.5s;
+}
+label #cancel {
+  z-index: 99999;
+  left: -165px;
+  top: 17px;
+  font-size: 30px;
+  color: #fff;
+  padding: 4px 9px;
+  transition: all 0.5s ease;
+}
+#toggle:checked ~ .navbar {
+  left: 0;
+}
+#toggle:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#toggle:checked ~ label #cancel {
+  left: 165px;
+}
+.header {
+  margin-top: 0;
+  font-size: 45px;
+  padding-left: 3rem;
+  padding-top: 39vh;
+}
+.header2 {
+  margin-top: 0;
+  font-size: 45px;
+  padding-left: 3rem;
+  padding-top: 10vh;
+}
+.button {
+  margin-left: 3rem;
+  color: var(--txt-clr);
+  background: var(--accent-clr);
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 8px;
+  transition: all 0.35s ease;
+  user-select: none;
+}
+.button:hover {
+  background: var(--passive-clr);
+}
+.button-outline {
+  margin-left: 3rem;
+  margin-top: 2rem;
+  color: var(--accent-clr);
+  background: transparent;
+  border: 3px solid var(--accent-clr);
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 8px;
+  transition: all 0.35s ease;
+  user-select: none;
+}
+.button-outline:hover {
+  color: #fff;
+  background: var(--accent-clr);
+}
+img {
+  border-radius: 5%;
+}
+p {
+  font-size: 22px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.info {
+  padding-right: 1rem;
+}
+.img_deg {
+  float: right;
+  padding-top: 33vh;
+  padding-right: 4vw;
+  width: 500px;
+  height: auto;
+  border-radius: 9px all;
+}
+.home-info {
+  padding-top: 40vh;
+}
+.img_deg2 {
+  padding-top: 5vh;
+  padding-left: 4vw;
+  width: 700px;
+  height: auto;
+  border-radius: 9px all;
+}
+.img_deg3 {
+  float: right;
+  margin-left: 2rem;
+  padding-top: 33vh;
+  padding-right: 4vw;
+  width: 600px;
+  height: auto;
+  border-radius: 9px all;
+  border: 1rem solid var(--body-bg);
+}
+.img_deg4 {
+  float: right;
+  padding-top: 4vh;
+  padding-right: 4vw;
+  width: 500px;
+  height: auto;
+  border-radius: 9px all;
+  filter: grayscale(100%);
+}
+.diseaseinfo {
+  margin-top: 52vh;
+}
+.safetyinfo {
+  margin-top: 20vh;
+}
+.measurements {
+  margin-top: 40vh;
+}
