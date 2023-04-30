@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="kardiacon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/0ca28e323e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Kardia - Heart Diseases</title>
+  </head>
+  <body>
+    <input type="checkbox" id="toggle" />
+    <label for="toggle">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <!--navigation bar (duh)-->
+    <div class="navbar">
+      <h3>Menu</h3>
+      <ul>
+        <li>
+          <a href="index.html" class="i1"><i class="fa fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="measure.html" class="i3"
+            ><i class="fa-solid fa-heart-pulse"></i> My Heart Rate</a
+          >
+        </li>
+        <li>
+          <a href="diseases.html" class="i2"
+            ><i class="fa-solid fa-heart-circle-exclamation"></i> Heart
+            Diseases</a
+          >
+        </li>
+        <li>
+          <a href="safety.html" class="i5">
+            <i class="fa-solid fa-shield-heart"></i> Be Safe</a
+          >
+        </li>
+      </ul>
+    </div>
+    <img
+      src="https://media.istockphoto.com/id/1156928011/photo/heart-attack-heart-attack-conceptual-artwork-3d-illustration.jpg?s=612x612&w=0&k=20&c=A2kWPu_dG5vmcaKcfCGA6FVRRIHRJ83R0HhlAys5fK4="
+      alt="heart attack"
+      class="img_deg"
+    />
+    <h1 class="header">
+      Heart Diseases <i class="fa-solid fa-virus-covid"></i>
+    </h1>
+    <a href="https://www.childheartfoundation.com/donate" class="button"
+      >Donate <i class="fa-solid fa-hand-holding-heart"></i
+    ></a>
+    <div class="diseaseinfo">
+      <h1 class="header2">Types Of Diseases</h1>
+      <p>
+        There are many heart diseases out there, & here are a few:
+        <br />
+        Coronary Artery Disease. Symptoms include: Variety from no symptoms, to
+        chest pain, to a heart attack. <br />
+        High Blood Pressure. Symptoms include: No symptoms (usually). If not
+        treated, can lead to health diseases such as: strokes & different heart
+        diseases. <br />
+        Cardiac Arrest. Symptoms include: loss of consciousness and
+        unresposiveness, <em>severe cases can lead to death</em>. <br /><br />
+      </p>
+      <img
+        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBQVFBcUFRUXFxcaFxoaGBcXFxcXFxcYFxcYGhsXGBcbICwkGx0pHhoXJTYlKS4wMzMzGyI5PjkyPSwyMzABCwsLEA4QHhISHTIpJCo1MjI1MjIyMjIyMjIwMjI0MjIyMjIyMjIyMjIyMjIyMjIyNDIyMjIyMjIyOzIyMjIyMv/AABEIAMIBAwMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAAECAwUGB//EAD8QAAEDAgMFBQYEBQMEAwAAAAEAAhEDIQQSMQVBUWFxEyKBkaEGMkKxwdFSYoLwFCNykuEzorIHY8Lxc6PS/8QAGgEAAgMBAQAAAAAAAAAAAAAAAgMAAQQFBv/EACwRAAICAgIBAwMDBAMAAAAAAAABAhEDIRIxQSJRYQQToXGx8CNSgdEUQsH/2gAMAwEAAhEDEQA/APWQ24I0+SBe+Cre0I0SfTa7vXEC4HJJe+jXFcXsgKpgnwHXf++ao7RDVq8ngBYDgFX2iW5mqOLVmhTrEaFHUKgO4SN6xcxC0tnOkE9EUJboVmxpKxNdJV1J1pQYdGbrCuzxARJgSiHMKICEoGTyCJBTEZZ9kk6YJIgB0kklCAW0HQB4/RZ+ErS3xPzKJ2y+AOh+iysG/wDltPEvP+8j6JMn6jdiheNP5Oiw7paD+7K1B7LdNMdT8yjE2LtGOaqTQFUdlcR5dE3bIbGVe/5jy/yqg9LctmqOO0mzSpPlwHii0DgLknhA+p+YRyOPRmyalQ6SSSIASSSShBJJJKEEkkkoQiouViiQqZaKZSU8iSGg7RivclQxOV19Dr90M96oe9Z+dHTWJSVMLxuCI7zbtO4aj7hAMN0RhtoOZbUcOHRGfxOHf7waD/afMaqVGXTIpTxqmrXujJrVrgcFt7JPdJ5/RVjA0DeCf1O+6NoU2NENEDqT80UINO2Kz5VKPFJmVUqw6+mY34X3/dW4fM64BPQGFpZWX7ovyF02z3fy2Dgxo/2hGob7FSy60izDNIABsTJjkI+480QbaodhJe48A1vjdx9C1T7UEQReYLev0iTKYjK7bsuaZupIfD2GXe23hFj5R6q9EgWqZJJJMoUc/wC0VWAeTfuhmNy0qQ/7QP8AcSfqqfaB5cSxurnBo8SGhF7WAa7KNA1oCzydts6mONKEf8mhsB00v1OWhVflaTwCyvZn/R/W75wrNtYnKA3eZPgP8x5JidRsxzhyzOK9zKfiJqAcr+iua+6xcLWLqhIve/IDX1LfNao1SEzpSglo3tn+74n5ouUDsx3dPX5gFGrVHo5GRepjqtj5A43EcwYKopuyvybiCWco1b4WI5E8FZQF3/1fQH6qWDQQkmSVlCSlJMoQdJMkoWPKdVlycOVWSiSSSSshyFVyFfUU6zlChT+J2nwjjz6LnvbPQxSirZJjYEnwH1KDxlSBHFE1aw3nyTYXBOqOgM6uduCFq9INNQ9UuiWxmvc4ZZj4uEcI4rpxGnBVU8OGNAacoG+0nmZCEqVXTIeCLAyIJgneOvBaYLgqZzcs/vTtaQVVxDWzfSJ8UsBiWhknRojT8NvoqGOaS0kxm7pB38CDobyDHHkpUsMRVLRGQZXgfmNgOgLS7qQrTd2JajTTNTDe7fUmTyJvHhp4KipUaXTJBEtbGpI96BvEwL2sU2KrZRDZLtBlaXDod1rnUaKvCd0f6LmT7xGVxJ1l2UlxPmm34M9eSbajhUGYAS0iRoYMieYvbmr+1lpAu45gOkkAngFmbQxQdkyOBd2jWxNwTIOZuoF7rSwuGDBvkmTc3J1MTCpO3SCnFJJvsKaDvKHxtWGxvPyRGiyKtTO+d2g6IpOkDihylfhAWzqHaYjMfdpif1OkDyEnyQ22q81Hcz6Du/Ra1GKYcGn3jJO/QC3kgMThGP8AkkSWqOhikvucn1VI0/ZxsYdvPMfN7iPSFjbdxOYl27QdB+yfFadHEBlJtMCIaGzO4CJ6rD2rSLgSLq5y9KSB+nj/AFXOXyWez2D/AJNaqR7wLW9BcnzgfpRDityhhGsoimNAyOtrnxMnxWCTYKSjxSReHJzlJ/Jt7KPvDofmPoFoBZOyHX/T8iPutZOh0Ys6qbB8c05cw95pzN8NR4iR4p8O6S4jQwfMf4V5CC2bMEH4Tl/tsp5FraYbKeUOKnd1ubwASb6WCtaRz8VZTRMJFRJUcyhKJFNJUS5NmnVQuiRKgRCg8HddOKiCwuPsN2h4HySTJ1AqOWp0ZN9BcqGIJK1adKGjibn6KBws7ws3DR1FmV2zEaDNtd3+F0+Do5GAE31cef2Q+BwLc08L+O5EY6sAIjXmihDirYr6jL92SjEBxVcPluYgDhv/AMKulSBbDSfK/gp08vAeU/MrTwdIxMR1gK1HkypzWNUimlgGZMrm5p4n6qrtHUagc8yxzQ2Yu0gkiY1mSJ/Z0HsBNz5FS/hGuaQ4SCIKZx9jL9z+7af80LDO7QipBDY7gOpnVxG6RpynijAFiYPFmi7sato9x+54+44fSFriq06OHmEcWmvkTODT+PBhbcIbiMO6BOaCd5Bc1onzK6Alcpt5xdiacBxA7My0EtH8wkyRbQBdE7FtG9BGW2Oy43wh+j/co2xicrcs3PyGv0HisQ4yN6I2jkqVMxfADcoaInUkmfTwQg2fQd8bz+ofQIJtt6NWCEYQ9Sd/oRfjlVUx8CZ4K6r7P0naF455ys7GbEyCe+9o3B+R390EeiW1I0RnjekaTMTImVMuBHVc/Qc0g9g9znNBLqNWG1QBqWlvdeBewutbD1Q4NdxClvyX6X0dDsXF52lh95turTofQjwWRNh0TYCrkxLOD8zT/aXD1aFnVNp0xbMPtdG5XFCMeKskq80/3NvDNcSCz3gCReBYt1HxDdB8wVr08cCQ1wLHHRrov/S4WPgZWRsDFNe5sGZa4+rVu18O17S1wBB3fUHceYTcfVox/U6nTRc4rMovLg8N3uN9wB4843KiKrXmlmzNMZXH3gDMtdxiJ5hazGBoAGgR3YqlFe9g4cW6wW7yBBB4m5kc93ytbUBAI0Kd5QVGoGtIH4nBo/UTHQSo3RFGwptUSRNtOc7/AKeqnKqpUw0W1Op3k8U+fcf/AEqsnHeiwuVbkziRqoyqbLSIOqJqzrX8Dw68kLiTBlSdVkJLn4HrH00R/iCkhievmUkHJj+C9g9wsoimpNNlIFOWxFtBNBkN6oatRDjoi6bu6Oiri/VG1oVGTTbB6WBBPJHZBEBIENCrfiQFEkgZSlNkhRur2tUKL5FlaiSFSb6ZTXoMe0te0OadzgCPVYmM2K0NJp1alMAE+9maOZDrx4hb8rkPaPa2c9k2SC4ABty8zYDiJQZXFK2afpI5JSqLpefYxzXqNbJfM8ZFlKniazx3WPeL95jXObwPeAhah9lS+g/tH/zXCWgHusIuGmPenQnnbicPYe062EcaeWRPepOsWu4tO7de4NuqycHFrlpM7CzRyJ/aSbXvq/0E+qabi14e11pDgQb6InA7Rpl0Zpi8C5jjCF27inYh/aBgZ3Q2M2aYJvoOKs9mtjVqWIbX7oABBa4ESHCDEaFWl6qXQU5f0+UtOuvk6+i8QCLhWVGZgh3kBxIEBxmOBOp8dUUxwT/g5T1s8n9qqj6GLlstLcr2EW8QeoIXW7KvTZOsX9EV7Xez7cSxr2jv0zmb+dvxMPWJHMc0FgnQ0fvgkSXFm2GRTja7DHVIr4XnV9Mrl5Hicc91w43JPmSu49p9rGiKTxdwdUy/1Gm5rT4Eg+C4FlAkK70Hjj6m/hfueg/9NMY816bXEkFjgB+kH/xK9aXiPsVjW08Th5IH8wtcL6Op1Gz5uC9Wx236NMO70kNJAHILRjklHZg+sxSlkXFXofBPz1C7jmI6Aho9FpkLl9kbQOVrmtJJbEAEx7t7LU7XEP0YGDiSJ8hPyVxloVlwtS8JfqE4zEBjS43gabys3BUpl7agLjd0AOaCbkC0gfZLAsD3PZWaC9puHd4Fp0c0GxB4xy3Ig7PpDSmxp4tAafNsFU7ey1xgq8+/gu7QD3njocoUswdoQeBBkdEKKTme44Efhd9HASPEFN2jXOyuZledA4C8cHCQekypZXFdoKfWhzhz0TZgdPL7IOs1ocYEchYX5DmmFRVyDWPSoniChMQ4gSFZjKnePgPIKsiWkHqDuIWee7NEFSTYP/Et/GByk/ZMs5+GMm49Uln5y9jb9qPv+Dq21uSi6oUwbBKkGyQFvVnLpIKqEgDopUBAlykWyeSZzSeQTTNeqBqryTCsoYWbu8lf2QVkwoo72W56pEwAmc+FAvVdR6tsWo2wDbWNyUzeCQR4b/t4rF9k8HmJxLxcktpg/C0WLupMjoOaF9ssQ45abdXFrR1cY+ZatrEV2UKIA91rQGgb4EABZ205NvwdJQcMSjHuX7BuN2lTpCXuDR5k9ALlc/W2nhMS8NOHe92mezSAPztdMclzO0cc+pUDGg1KrjDWN+Q4NAm55krodh4Hs6YL4NR1zlk9A3eQFXOUn8DP+NDFHbfL4dBuC2dTpklrYni4uIHAFy0GujVCObVJ7rAOb3AeQbJ84Uv4SubZ6bfBz/mQr2ukKk0+2Qx1ewI/E0ebgFp02oLDbIyvD6lQ1HDQQGsB4ho39StSArin2xOSapKJAhcr7Q4Y0s1Vtmau4NP4uh3/AOV1sIfFYdr2lrgC0gggiQQRBBHBSceSBxZOErPG9pYgYh7SdG+6NJneRu6KgYSLj5LT9ptiuwT5aC6k49xxvB/A48eB3gdVmYbHtPwiTpN/FKSOzCUXG4ibTyOFQC7SHeRlH4nEuq1XFvukwHG1uXBSp16MQRHEj7hdT7D4HDVKrjmDnNAc1to5kjfBi3NWlydAZMixxcn4Os9lcE6nQBeIc4AwdQ0e6DzuT4rXIVhKay1pUqODKbnJyfkzcdhcxD2nK9vuu3EHVrhvafTUKNGvmBtDmmHN3tP1GhB3ghaTmTosZuGBqVS4XzNLSLOAyNFj1B8kElTGQaap+AhyhVptcIdxngQRoQRcHmo5i0w643O+juB56HkrHIRyBMW0tIkyRImwJvMmLb1Wx153AZvLT1hFY5stDuQP0KCq90Bu83dyG4fXyQS0x0HyikD4p9pUdn4mCQ64FyOB0EcyYUMQDBB3fv7Kg0nNDdAD3nOJDRF4HE2k2G8LM21KzXUXDiw+phWuJOZl+IM/JJVtr043nnIE+CSmvgDjP5/BuVR3lbhqZLp3BEDCgmSr7ALfGHucqeRVSGIUSkLlSIRiiLQouVgUHhUy12Vkqqs5TcUNWKCTHQVs5LbHfxlBv/ca7+wZ/wDwWf7R7XLnhlMF5Jy02N1c474/cBR9qMVkxGaYy03nxd3Y8nFG+zWDZhaD8fiBmqOZNNp1Yx0BrRwc8kSdwIHGcyXJtHVcljjGXbpJI0fZ7ZLcI0vqQ/E1AM51DQdKbOXE74nQCDhiKVBsAi1uJnxuVxOK9oHhrHE995c954atDR5+g4LJrbUe6b3L/K8hXzroGP07m7m++zuaO1zndUBzNd3bgAtDTY21F3eiKxW3OzAmXOdZrW6uNreq5PZTwGkm5EngOPmtH2Yy1HPxTr94tZOjQAJI6yhU30MyYIJN11+TqsEyo6HVCB+RugPM/EialMP96Y4AkfK6zDtyk0kPdlAtzcYkkX0APzQWM9qKIBh4JafdLspM2sN+qZao57xZJPSN6o3KO67wc63nEql2KfIlscbifJcFtD2ueJyQeoJtJ3zZC4L2xfLe0AcJkEmC3dHORNjvjRA5PwPj9JKt0d/tIUa1N1KoAWuBBabHqOBGsrxz2g2S/C1MmbMw3Y8fE3nwcJE+B3r0PZ+3m1u7JY4nX/I+soL2m2W6pSe03Idma4xLSAeljoeRVKT8h44PG6OO2UGugEA9bruNjU2UqlOqGNaQQCWgCZ153aSuA2G92csiOu4zELt2Pe1jWTOY7xaBBMERpYIuh0vUqPU1UXQvOcPtnF4d4GJFRocbF0x4TY9F22Ax7ajQZF7gjQ/Y8k+ORPRy5/TSguV2vg021FQ+lNTMB7zIJ5sdLf8Am/yTaK6m9H2IaraBnMO6/wA/JVvbafAouswe95wqXVWwcxgRqY9SqaDjJvog0AtvuvHGd3msZ8mZ1la9Cqwy0OaSYgBwv0VT8M1pJcZ4NCXJWh+Kag3Zn4OiajspbIAnpyngTu6obaGAY1xJcazz8Ie1gHIyZ8AtPG4kwGtGSRJA1jcOXFYeJoyOYSciSVVZrw8pS5XS9v5/4V9q4W/hT/8AYfWbpIHK7cSOhKSy8/5r/Rv+z8/l/wCz00uShIBOuueWIpEpOVLybwoElZYSovKi14IBGhSqFUWlsqcUFiawb4+nNU47aGUOLWl+XUiIHKTv5arnK+0nFtR7tAcjAN7jBdHE3aPEpM5I3YcLe2c17RbPq1hVxIvTD8m/NA+KPwyYRPtft7tMPhWiwextR4HEDKG9M2f+0Lp/Zm9GpRqN0c4Oa78LxMEdc48F5f7SYc0q7qJMhhLW8mk9oB/vJ8Uk1J8pU/HRYx2duY6Aev7ASwxkklRpiKbRxv5lamwaDahjeJPLu7iqaNXKkGVZc1lJtnvt/SyLu6xK3MTTpim6jRIswFzAYcHNhoOtybfdZGFY57qlZuUE91gccpyiLgnisTF4t7Xl0w+4dzGhB4iEKQTjyWn0BVcUbtqZ3QbknQgxcEISrjm7gPEAxzUMTVJJvYoNyalQuc7JvxTjvhNTeSVQQrMObq2gFJ2dDst+Uhw1C9DwmI7Wm3MOvOY1Xm+zguoo4h7KYLXCSQId66cglhZY8kjlsRR7PHvYLDPI6ET85XTYLFl9QT7sDLv1jyN1jYzDZsa3NOZ1Nr3DTvEu8tFo4cZagDdHugcovI5W9VfgpI9V7FleiG1Ghwc0SDxjUcDO9ck7DPwVUMkuoPPccdWn8BP4vn5ovAfxhhrCWt3EhsdRI+QVuI2JVqAitiHvvOVoaGgjQxF/RMfqXWzFjX25NOSp+DdwOJa9sk3+Y4oh9VovpzXI7MqvGai8lr2mJHHc5s7iPmtinhm/Fmefzkn009EUZNoDJgUZXejROIe61Ns/mdZo+rvBQZSFO7u+43kgADk0fCFVQw+X/TeWH8JJc08i0mR1BHiiqudzYyCdZzd3wtPoj72xDpOl0SZiTPJKu5oGYgOva2nihGMdvdH9I+pn6KyjUBJa7Q6KWRwS2gOtSzEuBmdQdR9/BD/wbzuI62Hqi8VhyzmNx+/BCuk6klKkt7NeOTr0vRSdnje5nn/hJTypJfCPsP5z/uOsCRTqDitxw0M7RVqe5QeREkwOaFhIFfRcCSxwE3IcJaTxEEEFZdarUqVOzzDKBL3NblsDBaDJNzaeR4LTe/OLGGfE/SRvDf8A9eXKqhSDWlxEZrxplaBDW+DY8SUDQ+Drvszdu1W06MAQBo0DhcADrHmsnZGCzVG5rtojTc6s7vPdzyl1uo4Kza+NBe2fxAU2/mJgPcNwB04nojdhU8tLnmfJ4ntHXSW7kbknHGVPcKeKO4VGf7mXA8i9eWe175xlb/5Pk0Bel7RwwqVWgkgSW2MEO7NzpB4+6V5h7Tsc3E1Q45nB93RE2BmEC7GQS/BJk5KYP7k/Za1KG03XALzkaBqSTlknfFzAWSScjDvyhaDHjNQkQMxmendM8J+quQ5M1sdjGsAaIgDLHhb6LlsU+URj6s1ng8B5jT7ITEmFSRoikoGfVKqJUnulQKYZWyDlbhm3VZRVBkWUZSNLAG61n1CalNk6GSOOlys7BtDRJsFZsx+epmJtMnkJ0CBjQnaGIP8AG1HC+Wmxo65Qb+aOwVEjs6pv/Nawk7+4826QPMLEwrnVKznAEufU7rW3Jk91o4mIC7s7DqZDTYAXUWBzmg+9VfDnNad5DMjR/TulRKxc5qNJs7PAulrTuytHkAqqrocRzKF9mscKlEcW2I3/ALmR4InGt708Qm/9bOeo1NpmTtinDmVhqCGP5tce6fB3/Io+g/MP3+//AGhMa7MAziQT0a4HzJj1UcLiCHljhBFxwI4j96hBezTxbjXsabXEGVrUXSAVktutSiMrRNrJ0DFnSpFGI7s+nU6IYMV9aXjN8I93n+bpwVbdFH2XDr5LKeIIsbj9+al2dJ24T4j5KkqJClk4LtaCv4Snw9XfdJCZDuBSU17FU/7vybTiq07imCYZUVVKYM6/3OH1QbcKHODi3uj3Qbk/mdPoPHoa5max038+STiqaDTfgpxF4adDd39I3eJgdJWVj8c+oW06Qs4xndpAu5zRvAANzY6IzJ2pk/6f/OP/AA+fTWGHZmc6pGvdbya07upHoEDtjoUtvtGPtnAta1kT3ageTq52Tvkk7z3Qj8JRLKYB3NGbrHePnKhinZ6rWfhhzvPMP+AHirq925fxGPDf6W8UtpWaeT4pMAqMjs3nU1AT+sOaB6gLyr22EY2sPzNPnTYV6ztP/TeRq0Zh/Uw5m+oC8p9uyDijUaIFSmx99R3chB5gsIPRLqmNx23ZXTB7Ns6wAinVT2lJpbAgm8XEETzgoJrjlb0HyUsfUM03CxDXeUEK3s0IF+MnqFDFOsq2P1Ki95Oqpdj79AKUycpI7M1EYRVCt3gD5qgBKEDYaRqYyu0tDWmZuenD98Fv+yWwHYouzOLGAd5zReXfC2bTE3vGvBczs/CuqPaxolx3fdenbODKbG4fRgu+Dd7zrmI3boG4ATFlLKny41E2cBgsLhO5hKTX1ojNOZzQdTUqGcjeQidwRXswSQ4u95xDyePaS6emqCLu4KbAGh5DLCAGkEuiNO6HLVwNRrargNCxsfpLmkDpLfNNg7aOfkg4xa7b8+QLHYb+Hrduwdx5h7RucfjHXfz6rRLm1Gy0zvHXgUtrUe0puaNdRzLSHAeizcFQlgfTeWP3z3mnq37K3p0SPqgm3taKY/mu5Nb83fdLFUS4Ats9t2n6HkU9Fzi5znNJzGCWAubLYFjreJ8VbTqNcYBvw0Pkgo0pj7NqmplElpvMRIcN1+hV+J7RtyczQdSCMvNwBMt5jy3oWi3s6wO53e6Ed13oR5lbVNFFWqM+V1K10NSxLyLsDgRqxwIjo6E7cpMAwfwuBDvI6oVv8t2ZvuE94bmz8Q4DiN2q1DTa8Q4Bw5ifFMWzLL07XQM7DngpUcMSe8IHzQ1MOa4Nzugnukw4f0md/C9+q0W5hqQfAj6lWkmSUpLVk+6NySq7U/hTKxfFhCi5ThQKsFEHODbkgdTCGcM9vg3nTPyH5eJRTmjhdOqaDQPi/dDRYu7o5DefASqcQ9rGE6NaPQDRWhwc935RHi659MvmgdruGUt3ki28iUMnqxuNW0gTBUzJcfeIzO6vIMeDWtCIcpU2QL6m5PM/Td4KLks0p2wXFiRHFzR4ZgT6Arzv/qVgg2pSqDR4c0jcHNIPrmJ8CvR6guOV/Qj6rl/b3B9rhHkCTTIqDoJDv9pJ8Epj4do8/Y/+WyT8IVbq8uGbSC3faf36oPDYmBlcbCYTHEzbcf39FLNFCYTMKxyqYVfuVNj4RuIO4JAKTgnYwmwEq7E1sYBX4XCPqODGNLnHcPmeAWrgPZ+o+C/uN/3Hw3eK6/ZOzmUhDGxxOpPUobLQNs7ZzcLTt3qr9XdNzeQ9flb2obexdw1A68SrdpPOeOAQAChZr4faDjlL3cQ3lMXIWw2vDqfENcSeuWB5BcpQYXua38T79IE+iJp7RJe4m7S4xyE29AFadASgno7x2IuR0+QWViqbszjRmSDmbMMceAO53GPS6rfiJax4Oog9Rb99FdQxKY5X2ZI4mlaNDY1YGiI95s5m6EHWDwtCniKDKmoyu3EWI6FA4U5Ye3WO838TZmP6hu8uCPZeMtw67TxCYnaozyjxk3Zl4hr2PAeWuF8jhZxJIGUjToVpYetLAQqcXQDnubOjGgH8L8xcHDmDlPglsipOZrgJDjI4GbgctFSVMJy5Qv2DGiRfep7NJALDfKYB4tOn28FaKYOluSjTZDp3wAfCfumJUzPKSaaLzSBzSJB/fzVBJ903jfxG7xRjtEKVbFw2NnckpZUlWw9BTlGFIqJRCURVTsxsO6OJ18B9/JWpKBAQYRma2ALd431A3bzM3Pqg8fSIY7L71jJNyQRqVqPbqeMDyn7oTENlpHEEIJIfje7KM0iYiRodRyVb1cVTUS2aIlD0PVaCCCJBEEHQg6goh6Hels0wR5ft/wBj6tN5dRaalI3AF3s/KRq7kRPNc+7AVQYNOoDwLHD5hezvKHe5BZoR5NQ2fWJtSqH9DvstnB+zWJqCcgaOL3Aegkrta3FFbPMyFXbCU3FaOSoex4DS6pUmPhYIH9x+y08HgadMQxgB46nzN1uPZ3XDl8ljsKjBeyTBeFqUmQUExskHmtKg3W2gOqiJ0jFxN3uPP5WVDqaLeySTzUqdIau0GvPkFAhUKJZTdU+IiG8QHEAuQDKa0wS5tQneG+EOEAKmnTVlIMLy2nTaODif1Oj6K6jUnRVubLW/llp8y4fM+STGK2SPRqYV5sAL7gtPB1chcwn8wi+XNMjznzWRhnkCAYnWNfNEUaUku0M2O8RbymUcXRkzY07vo0aMl73cXAT/AEtAVVNmStrZ4JHUXM+YU9nvgua7e6THNouFPaDCIcLlpzDmBr6T5JvizHdPj8BgVzDJEqhjgRI3q+jqjQifRe69kO1iulPEImLToaEk2ZJQlEymSSUKRFJJJQIrqaIWokkgkNxlDlQ9Okls1RB3oZ6SSXI1QBqiGekkgNC6B6iu2X73gkkoVLoJGjuh+qw2pJKmRBWH1HVadPR3T6pJK0W+jLU6m7onSUCGZ7r/ANPzT00klCFwVrEklCBlJHYbRMkjiZcwRS99/Vv/ABaj/gHVOkno5+Tx/gG2d7jen1WhQ+idJEvArL2yY1SdqkkiE+SCSSSgR//Z"
+        alt="Heart Render"
+        class="img_deg4"
+      />
+      <h1 class="header2">Causes for Heart Diseases</h1>
+      <p>
+        A few causes for heart diseases are: <br />
+        Diabetes: Diabetes in simple terms, is elevated levels of blood sugar,
+        which can be caused by eating exccessive red meat and/or sugar <br />
+        Drug misuse: When prescription and/or illegal drugs are overdosed on
+        <br />
+        Emotional stress: Stress at work, school, etc. <br />
+        Excessive use of alcohol and/or caffeine: Overdrinking alcohol and/or
+        caffeine. QUIT ALCOHOL!! <br />
+        High blood pressure: Control your blood pressure by eating less fatty
+        foods and less sugar. <br />
+        Smoking: Smoking ciggarettes can cause cancer. QUIT SMOKING!!
+      </p>
+      <br /><br />
+      <a
+        class="button-outline"
+        href="https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118"
+        >Learn More</a
+      >
+    </div>
+  </body>
+</html>
